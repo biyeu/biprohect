@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.l1{
+    position: fixed;
+}
+
+body{
+    background-color: #212121 !important;
+    height: 100%;
+}
+
+.taskbar-home{
+    display: flex;
+    color: #1ED760;
+}
+.taskbar-search{
+    display: flex;
+    color: #fff;
+}
+
+.taskbar-home p,.taskbar-search p{
+    margin-left: 10px;
+}
+.taskbar-search p:hover,.taskbar-home p:hover{
+    cursor: pointer;
+}
+.task-bar{
+    padding-top: 23px;
+}
+
+.taskbar{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.task1{
+    font-family: 'MV Boli';
+    display: flex;
+    padding: 0px 0px 15px 40px;
+    margin-bottom: -3px;
+    margin-left: 13px;
+    border-radius: 13px;
+    margin-top: 12px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #121212;
+}
+
+.your-library{
+    color: #fff;
+    margin-left: 0;
+}
+.your-library h1{
+    margin-bottom: 23px;
+    font-size: 1.7rem;
+}
+
+.your-library:hover, .your-library h1:hover{
+    /* color: #bababa; */
+    cursor: pointer;
+}
+
+.task-login{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+    /* text-decoration: none; */
+}
+.tasklogin{
+    width: 80%;
+    margin-bottom: 23px;
+    height: 34px;
+    background-color: #1ED760;
+    border-radius: 23px;
+    font-size: 20px;
+}
+
+.tasklogout{
+    width: 80%;
+    cursor: pointer;
+    text-align: center;
+    color: #000 !important;
+    /* text-decoration: none; */
+    margin-bottom: 23px;
+    height: 34px;
+    background-color: #d71e1e;
+    border-radius: 23px;
+    font-size: 20px;
+}
+
+.tasksignin{
+    width: 80%;
+    margin-bottom: 23px;
+    height: 34px;
+    border-radius: 23px;
+    font-size: 20px;
+    background-color: #f1f1f1;
+}
+.contract{
+    color: #fff;
+    font-size: 23px;
+}
+
+.icon:hover{
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.music-control audio{
+    width: 100%;
+}
+
+
+.music-img{
+    background: url("https://st2.depositphotos.com/1029760/42531/v/950/depositphotos_425310162-stock-illustration-new-year-2021-music-festival.jpg?forcejpeg=true"), lightgray 50% / cover no-repeat;
+    width: 1044px;
+    height: 281px;
+    border-radius: 5px;
+    border: #000 solid 2px;
+}
+
+
+.t3{
+    color: #fff;
+}
+
+.music{
+    display: flex;
+    /* width: 1169px; */
+    margin-top: 16px;
+    margin-left: 23px;
+    /* align-items: center; */
+    gap: 40px;
+    flex-direction: column;
+}
+
+.name p{
+    color: #fff;
+    font-size: 23px;
+    /* text-align: center; */
+}
+
+
+.music-img h1{
+    color: #000;
+    font-family: 'MV Boli';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 100px;
+    padding-left: 34px;
+
+}
+
+.sportify{
+    display: flex;
+    
+}
+
+.font{
+    font-family: 'MV Boli';
+}
+
+.music-partner-img{
+    /* width: 13%; */
+    width: 186px;
+    height: 200px;
+    border-radius: 3px;
+}
+
+.music-list{
+    width: 198px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-partner{
+    margin-top: 23px;
+    position: relative;
+    /* border: 3px solid #000; */
+    border-radius: 4px;
+    margin-left: 23px;
+    width: 192.9px;
+}
+
+
+.music-control{
+    position: absolute;
+    top: 140px;
+    left: 126px;
+    /* display: none; */
+}
+
+
+
+.music-control-btn{
+    border: #000 2px solid;
+    background-color: #1ED760;
+    height: 50px;
+    width: 50px;
+    /* display: flex; */
+    /* text-align: center; */
+    padding-top: 11px;
+    border-radius: 50%;
+    padding-left: 18px;
+}
+
+.music-control-btn span{
+    color: #000;
+    
+    text-align: center;
+}
+
+.music-playtis h2{
+    color: #fff;
+}
+
+.music-list-partner h2, .music-playtis h2{
+    /* margin-right: 70%; */
+    /* color: #fff; */
+    border-bottom: 2px solid #000;
+}
+
+.music-list-partner{
+    display: none;
+}
+
+.music-partner-content p{
+    font-size: 24px;
+    /* text-align: center; */
+}
+
+.music-partner-content button{
+    background-color: transparent;
+    color: #fff;
+    padding-left: 13px;
+    /* padding-top: 23px; */
+    padding-right: 13px;
+    border: none;
+}
+
+.music-partner-content{
+    display: flex;
+}
+
+.taskbar-search a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.taskbar-search a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.task-login:focus{
+    display: none;
+}
+
+.tasksignin:focus{
+    display: none;
+}
+
+.name{
+    display: none;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.audio-controler{
+    margin-top: 23px;
+    margin-left: 13px;
+}
+
+.audio-setting audio{
+    width: 100% !important;
+    /* border: 3px !important; */
+}
