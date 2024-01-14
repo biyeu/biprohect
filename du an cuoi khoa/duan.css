@@ -35,9 +35,14 @@ body{
 }
 
 .taskbar{
+    /* position: fixed; */
     width: 20%;
     display: flex;
     flex-direction: column;
+}
+
+.task2{
+    height: 82vh;
 }
 
 .task1{
@@ -122,7 +127,7 @@ body{
 
 .music-img{
     background: url("https://st2.depositphotos.com/1029760/42531/v/950/depositphotos_425310162-stock-illustration-new-year-2021-music-festival.jpg?forcejpeg=true"), lightgray 50% / cover no-repeat;
-    width: 1044px;
+    width: 100%;
     height: 281px;
     border-radius: 5px;
     border: #000 solid 2px;
@@ -134,13 +139,17 @@ body{
 }
 
 .music{
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: flex;
-    /* width: 1169px; */
+    width: 100%;
     margin-top: 16px;
     margin-left: 23px;
     /* align-items: center; */
     gap: 40px;
     flex-direction: column;
+    /* overflow: hidden; */
+    max-height: 100vh;
 }
 
 .name p{
@@ -171,6 +180,27 @@ body{
     font-family: 'MV Boli';
 }
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .music-partner-img{
     /* width: 13%; */
     width: 186px;
@@ -178,10 +208,16 @@ body{
     border-radius: 3px;
 }
 
+.artist-partner-img{
+    border-radius: 50%;
+    width: 168px;
+    height: 168px;
+}
+
 .music-list{
-    width: 198px;
+    margin-right: 28px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .music-partner{
@@ -225,20 +261,23 @@ body{
     color: #fff;
 }
 
-.music-list-partner h2, .music-playtis h2{
+.music-list-partner h2, .music-playtis h2,.artist-list h2{
     /* margin-right: 70%; */
     /* color: #fff; */
     border-bottom: 2px solid #000;
 }
 
 .music-list-partner{
+    justify-content: space-between;
     display: none;
 }
 
-.music-partner-content p{
+.music-partner-content p,.artist-partner-content p{
     font-size: 24px;
     /* text-align: center; */
 }
+
+
 
 .music-partner-content button{
     background-color: transparent;
@@ -285,4 +324,62 @@ body{
 .audio-setting audio{
     width: 100% !important;
     /* border: 3px !important; */
+}
+
+.feature-one,.feature-two{
+    text-align: center;
+    height: 89%;
+    background-color: #000;
+    border-radius: 23px;
+    width: 369px;
+    padding-top: 23px;
+    transition: background-color  2s;
+    transition: color  2s;
+    color: #fff;
+}
+
+.music-feature{
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-one span,.feature-two span{
+    font-size: 2.0rem;
+}
+
+.feature-one:hover{
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.feature-two:hover{
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.music-played-img{
+    width: 90px;
+    height: 90px;
+    border-radius: 3px;
+}
+
+.played{
+    border-radius: 62px;
+    background-color: #d8d8d8;
+    margin-top: 8px;
+    width: 51%;
+    height: 100px;
+    color: #000;
+    margin-left: 33%;
+}
+
+.player-music{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-list{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
 }

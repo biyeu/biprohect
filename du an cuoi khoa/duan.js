@@ -4,6 +4,7 @@ const sign = document.querySelector('#sign')
 const name_user = document.getElementById('name-user')
 const search = document.querySelector('#search')
 const log = document.querySelector('#log_out')
+const feature = document.querySelector('#feature')
 
 
 // backend
@@ -48,7 +49,9 @@ if (checkuser) {
     sign.style.display = "none"
     document.querySelector("#profile").style.display = "block"
     document.querySelector("#music-list-id").style.display = "block"
+    feature.style.display="none"
 }else{
     document.querySelector("#music-list-id").style.display = "none"
+    feature.style.display="block"
 }
 
