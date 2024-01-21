@@ -1,52 +1,118 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
     border: none;
     box-sizing: border-box;
-}
-
-.l1{
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px;
+    }
+  }
+  
+  .l1 {
     position: fixed;
-}
-
-body{
+  }
+  
+  body {
     background-color: #212121 !important;
     height: 100%;
-}
-
-.taskbar-home{
+  }
+  
+  .taskbar-home {
     display: flex;
-    color: #1ED760;
-}
-.taskbar-search{
+    color: #1ed760;
+  }
+  .taskbar-search {
     display: flex;
     color: #fff;
-}
-
-.taskbar-home p,.taskbar-search p{
+  }
+  
+  .taskbar-home p,
+  .taskbar-search p {
     margin-left: 10px;
-}
-.taskbar-search p:hover,.taskbar-home p:hover{
+  }
+  .taskbar-search p:hover,
+  .taskbar-home p:hover {
     cursor: pointer;
-}
-.task-bar{
+  }
+  .task-bar {
     padding-top: 23px;
-}
-
-.taskbar{
+  }
+  
+  .taskbar {
     /* position: fixed; */
     width: 20%;
     display: flex;
     flex-direction: column;
-}
-
-.task2{
+  }
+  
+  .task2 {
     height: 82vh;
-}
-
-.task1{
-    font-family: 'MV Boli';
+  }
+  
+  .task1 {
+    font-family: "MV Boli";
     display: flex;
     padding: 0px 0px 15px 40px;
     margin-bottom: -3px;
@@ -56,40 +122,41 @@ body{
     flex-direction: column;
     width: 100%;
     background-color: #121212;
-}
-
-.your-library{
+  }
+  
+  .your-library {
     color: #fff;
     margin-left: 0;
-}
-.your-library h1{
+  }
+  .your-library h1 {
     margin-bottom: 23px;
     font-size: 1.7rem;
-}
-
-.your-library:hover, .your-library h1:hover{
+  }
+  
+  .your-library:hover,
+  .your-library h1:hover {
     /* color: #bababa; */
     cursor: pointer;
-}
-
-.task-login{
+  }
+  
+  .task-login {
     display: flex;
     cursor: pointer;
     flex-direction: column;
     text-align: center;
     color: #000;
     /* text-decoration: none; */
-}
-.tasklogin{
+  }
+  .tasklogin {
     width: 80%;
     margin-bottom: 23px;
     height: 34px;
-    background-color: #1ED760;
+    background-color: #1ed760;
     border-radius: 23px;
     font-size: 20px;
-}
-
-.tasklogout{
+  }
+  
+  .tasklogout {
     width: 80%;
     cursor: pointer;
     text-align: center;
@@ -100,45 +167,44 @@ body{
     background-color: #d71e1e;
     border-radius: 23px;
     font-size: 20px;
-}
-
-.tasksignin{
+  }
+  
+  .tasksignin {
     width: 80%;
     margin-bottom: 23px;
     height: 34px;
     border-radius: 23px;
     font-size: 20px;
     background-color: #f1f1f1;
-}
-.contract{
+  }
+  .contract {
     color: #fff;
     font-size: 23px;
-}
-
-.icon:hover{
+    margin-left: -20px !important;
+  }
+  
+  .icon:hover {
     opacity: 0.1;
     cursor: pointer;
-}
-
-.music-control audio{
+  }
+  
+  .music-control audio {
     width: 100%;
-}
-
-
-.music-img{
-    background: url("https://st2.depositphotos.com/1029760/42531/v/950/depositphotos_425310162-stock-illustration-new-year-2021-music-festival.jpg?forcejpeg=true"), lightgray 50% / cover no-repeat;
+  }
+  
+  .mySlides img {
+  
     width: 100%;
     height: 281px;
     border-radius: 5px;
     border: #000 solid 2px;
-}
-
-
-.t3{
+  }
+  
+  .t3 {
     color: #fff;
-}
-
-.music{
+  }
+  
+  .music {
     overflow-x: hidden;
     overflow-y: scroll;
     display: flex;
@@ -150,98 +216,91 @@ body{
     flex-direction: column;
     /* overflow: hidden; */
     max-height: 100vh;
-}
-
-.name p{
+  }
+  
+  .name p {
     color: #fff;
     font-size: 23px;
     /* text-align: center; */
-}
-
-
-.music-img h1{
+  }
+  
+  .music-img h1 {
     color: #000;
-    font-family: 'MV Boli';
+    font-family: "MV Boli";
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-top: 100px;
     padding-left: 34px;
-
-}
-
-.sportify{
+  }
+  
+  .sportify {
     display: flex;
-    
-}
-
-.font{
-    font-family: 'MV Boli';
-}
-
-
-/* width */
-::-webkit-scrollbar {
+  }
+  
+  .font {
+    font-family: "MV Boli";
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
     width: 3px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
   }
-   
+  
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
   }
-
-.music-partner-img{
+  
+  .music-partner-img {
     /* width: 13%; */
     width: 186px;
     height: 200px;
     border-radius: 3px;
-}
-
-.artist-partner-img{
+  }
+  
+  .artist-partner-img {
     border-radius: 50%;
     width: 168px;
     height: 168px;
-}
-
-.music-list{
+  }
+  
+  .music-list {
     margin-right: 28px;
     display: flex;
     justify-content: space-around;
-}
-
-.music-partner{
+  }
+  
+  .music-partner {
     margin-top: 23px;
     position: relative;
     /* border: 3px solid #000; */
     border-radius: 4px;
     margin-left: 23px;
     width: 192.9px;
-}
-
-
-.music-control{
+  }
+  
+  .music-control {
     position: absolute;
     top: 140px;
     left: 126px;
     /* display: none; */
-}
-
-
-
-.music-control-btn{
+  }
+  
+  .music-control-btn {
     border: #000 2px solid;
-    background-color: #1ED760;
+    background-color: #1ed760;
     height: 50px;
     width: 50px;
     /* display: flex; */
@@ -249,121 +308,130 @@ body{
     padding-top: 11px;
     border-radius: 50%;
     padding-left: 18px;
-}
-
-.music-control-btn span{
+  }
+  
+  .music-control-btn a {
     color: #000;
-    
+    text-decoration: none;
     text-align: center;
-}
-
-.music-playtis h2{
+  }
+  .music-control-btn a i {
+    color: #000;
+  }
+  
+  .music-playtis h2 {
     color: #fff;
-}
-
-.music-list-partner h2, .music-playtis h2,.artist-list h2{
+  }
+  
+  .art {
+    display: none;
+  }
+  .music-list-partner h2,
+  .music-playtis h2,
+  .artist-list h2 {
     /* margin-right: 70%; */
     /* color: #fff; */
     border-bottom: 2px solid #000;
-}
-
-.music-list-partner{
+  }
+  
+  .music-list-partner {
     justify-content: space-between;
     display: none;
-}
-
-.music-partner-content p,.artist-partner-content p{
+  }
+  
+  .music-partner-content p,
+  .artist-partner-content p {
     font-size: 24px;
     /* text-align: center; */
-}
-
-
-
-.music-partner-content button{
+  }
+  
+  .music-partner-content button {
     background-color: transparent;
     color: #fff;
     padding-left: 13px;
     /* padding-top: 23px; */
     padding-right: 13px;
     border: none;
-}
-
-.music-partner-content{
+  }
+  
+  .music-partner-content {
     display: flex;
-}
-
-.taskbar-search a{
+  }
+  
+  .taskbar-search a {
     text-decoration: none;
     color: #fff;
-}
-
-.taskbar-search a:hover{
+  }
+  
+  .taskbar-search a:hover {
     color: #fff;
     text-decoration: none;
-}
-
-.task-login:focus{
+  }
+  
+  .task-login:focus {
     display: none;
-}
-
-.tasksignin:focus{
+  }
+  
+  .tasksignin:focus {
     display: none;
-}
-
-.name{
+  }
+  
+  .name {
     display: none;
     margin-bottom: 6px;
     margin-top: 6px;
-}
-
-.audio-controler{
+  }
+  
+  .audio-controler {
     margin-top: 23px;
     margin-left: 13px;
-}
-
-.audio-setting audio{
+  }
+  
+  .audio-setting audio {
     width: 100% !important;
     /* border: 3px !important; */
-}
-
-.feature-one,.feature-two{
+  }
+  
+  .feature-one,
+  .feature-two {
     text-align: center;
     height: 89%;
     background-color: #000;
     border-radius: 23px;
     width: 369px;
     padding-top: 23px;
-    transition: background-color  2s;
-    transition: color  2s;
+    transition: background-color 2s;
+    transition: color 2s;
     color: #fff;
-}
-
-.music-feature{
+  }
+  
+  .music-feature {
     display: flex;
     justify-content: space-around;
-}
-
-.feature-one span,.feature-two span{
-    font-size: 2.0rem;
-}
-
-.feature-one:hover{
+  }
+  
+  .feature-one span,
+  .feature-two span {
+    font-size: 2rem;
+  }
+  
+  .feature-one:hover {
     background-color: #f2f2f2;
     color: #000;
-}
-
-.feature-two:hover{
+  }
+  
+  .feature-two:hover {
     background-color: #f2f2f2;
     color: #000;
-}
-
-.music-played-img{
+  }
+  
+  .music-played-img {
     width: 90px;
     height: 90px;
     border-radius: 3px;
-}
-
-.played{
+  }
+  
+  .played {
     border-radius: 62px;
     background-color: #d8d8d8;
     margin-top: 8px;
@@ -371,15 +439,16 @@ body{
     height: 100px;
     color: #000;
     margin-left: 33%;
-}
-
-.player-music{
+  }
+  
+  .player-music {
     display: flex;
     justify-content: space-around;
-}
-
-.flex-list{
+  }
+  
+  .flex-list {
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
-}
+  }
+  
