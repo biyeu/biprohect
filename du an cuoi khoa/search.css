@@ -63,10 +63,19 @@ body{
 .ddd{
     width: 50%;
     margin: 0 auto;
+    margin-left: 32%;
+
 }
 
 .ddd img,.ddd p,.ddd h4{
     display: flex;
+}
+
+
+.ddd img{
+    width: 45%;
+    height: 171px;
+
 }
 
 .song-item{
